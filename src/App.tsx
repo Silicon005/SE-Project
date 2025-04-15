@@ -9,6 +9,7 @@ import { AdminLogin } from './pages/AdminLogin';
 import { AdminDashboard } from './pages/AdminDashboard';
 import { AdminProducts } from './pages/AdminProducts';
 import { AdminInquiries } from './pages/AdminInquiries';
+import { AdminContacts } from './pages/AdminContacts';
 import { AboutUs } from './pages/AboutUs'; 
 import { Contact } from './pages/Contact';
 import { Gallery } from './pages/Gallery';
@@ -27,6 +28,8 @@ function App() {
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/products" element={<AdminProducts />} />
           <Route path="/admin/inquiries" element={<AdminInquiries />} />
+          <Route path="/admin/contacts" element={<AdminContacts />} />
+
           
           {/* New routes */}
           <Route path="/about" element={<AboutUs />} />
