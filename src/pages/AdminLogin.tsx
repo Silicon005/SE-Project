@@ -31,7 +31,7 @@ export const AdminLogin = () => {
           Admin Login
         </h2>
         <p className="text-center text-sm text-gray-500 mb-6">
-          Demo credentials: <span className="font-semibold">admin@example.com / admin123</span>
+{/*           Demo credentials: <span className="font-semibold">admin@example.com / admin123</span> */}
         </p>
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="space-y-4">
@@ -79,7 +79,7 @@ export const AdminLogin = () => {
           </div>
         </form>
         <div className="text-center text-sm text-gray-500 mt-6">
-          <p>Don't have an account? <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">Sign up</a></p>
+{/*           <p>Don't have an account? <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">Sign up</a></p> */}
         </div>
       </div>
     </div>
