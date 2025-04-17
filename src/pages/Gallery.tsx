@@ -9,7 +9,7 @@ export const Gallery = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const querySnapshot = await getDocs(collection(db, 'products'));
+      // const querySnapshot = await getDocs(collection(db, 'products'));
       const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })) as Product[];
       setProducts(data);
     };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
@@ -14,30 +14,36 @@ import { AboutUs } from './pages/AboutUs';
 import { Contact } from './pages/Contact';
 import { Gallery } from './pages/Gallery';
 
+function AppContent() {
+  const location = useLocation();
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {location.pathname !== '/' && <Navbar />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/products" element={<AdminProducts />} />
+        <Route path="/admin/inquiries" element={<AdminInquiries />} />
+        <Route path="/admin/contacts" element={<AdminContacts />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
+
+      <Toaster position="bottom-right" />
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
-        <Navbar />
-        <Routes>
-          {/* Existing routes */}
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
-          <Route path="/admin" element={<AdminLogin />} />
-          <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          <Route path="/admin/products" element={<AdminProducts />} />
-          <Route path="/admin/inquiries" element={<AdminInquiries />} />
-          <Route path="/admin/contacts" element={<AdminContacts />} />
-
-          
-          {/* New routes */}
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/gallery" element={<Gallery />} />
-        </Routes>
-        <Toaster position="bottom-right" />
-      </div>
+      <AppContent />
     </Router>
   );
 }
