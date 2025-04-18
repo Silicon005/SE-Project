@@ -56,7 +56,7 @@ export const ProductDetails = () => {
             className="w-full h-96 object-cover rounded-lg shadow-lg"
           />
           <h1 className="mt-6 text-3xl font-bold text-gray-900">{product.name}</h1>
-          <p className="mt-2 text-xl text-indigo-600">${product.price}</p>
+          <p className="mt-2 text-xl text-indigo-600">₹{product.price}</p>
           <p className="mt-4 text-gray-600">{product.description}</p>
           <div className="mt-4">
             <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">

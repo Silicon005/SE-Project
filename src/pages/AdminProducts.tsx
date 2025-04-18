@@ -142,7 +142,7 @@ export const AdminProducts = () => {
                   <span className="text-lg font-semibold">{product.name}</span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">{product.category}</td>
-                <td className="px-6 py-4 whitespace-nowrap">${product.price}</td>
+                <td className="px-6 py-4 whitespace-nowrap">₹{product.price}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-right">
                   <button
                     className="text-indigo-600 hover:text-indigo-900 mr-4"
