@@ -3,19 +3,22 @@ import { Link } from 'react-router-dom';
 
 export const Home = () => {
   return (
-    <div className="bg-white">
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+    <div className="bg-white overflow-hidden">
+      <div className="relative isolate px-6 pt-14 lg:px-8 overflow-hidden ">
+        <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 ">
+          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] "></div>
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 overflow-hidden ">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Discover Our Premium Product Collection
+              Rukmini Enterprises
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Explore our curated selection of high-quality products designed to meet your needs.
-              Each item is carefully selected to ensure the best experience for our customers.
+            Forging Strength Since 1997 – Trusted Electrodes, Trusted Performance
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+            Delivering BIS-certified welding excellence since 1997 – trusted brands like Pilot, Marshal, Supersparc, 
+            and Maharaja, crafted with quality raw materials for unmatched performance across India.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link

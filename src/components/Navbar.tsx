@@ -41,7 +41,7 @@ export const Navbar = () => {
               About Us
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/gallery"
               className={({ isActive }) =>
                 isActive
@@ -50,7 +50,7 @@ export const Navbar = () => {
               }
             >
               Gallery
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/contact"
